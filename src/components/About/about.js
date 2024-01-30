@@ -19,7 +19,7 @@ function About() {
       </p>
       <p></p>
       <p> 
-        
+        andrei
       </p>
     </div>
   </div>;
