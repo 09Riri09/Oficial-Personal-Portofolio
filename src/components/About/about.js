@@ -18,7 +18,9 @@ function About() {
         field. Let's craft innovative digital experiences together!
       </p>
       <p></p>
-      <p></p>
+      <p> 
+        
+      </p>
     </div>
   </div>;
 }
