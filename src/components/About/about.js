@@ -17,9 +17,8 @@ function About() {
         technologies and fuel my insatiable drive to learn and excel in the
         field. Let's craft innovative digital experiences together!
       </p>
-      <p></p>
+      <p>i love bash</p>
       <p> 
-        andrei
       </p>
     </div>
   </div>;
