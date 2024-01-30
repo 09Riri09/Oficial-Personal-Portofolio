@@ -1,7 +1,9 @@
-import "./index.scss";
+import "./about.scss";
 import AnimatedLetters from "../AnimatedLetters/animatedletters";
 
+
 function About() {
+  
   <div className="container about-page">
     <div className="text-zone">
       <h1>
