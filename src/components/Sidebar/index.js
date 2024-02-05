@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
-import raresdev from '../../assets/images/raresdev.png';
+import raresdevsidebar from '../../assets/images/raresdevsidebar.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faLinkedin,
@@ -15,7 +15,7 @@ function Sidebar() {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={raresdev} alt="logo" />
+        <img src={raresdevsidebar} alt="logo" />
       </Link>
       <nav>
         <NavLink exact = 'true' activeclassname = 'active' to = '/'>

@@ -37,3 +37,74 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page {
+  
+    h1 {
+      font-size: 65px;
+      font-family: 'Coolvetica';
+      color: #810000;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+      font-weight: 400;
+      
+
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #630000;
+        font-size: 25px;
+        position: absolute;
+        margin-top: -10px;
+        left: 10px;
+      
+        line-height: 18px;
+      }
+
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #630000;
+        font-size: 25px;
+        line-height: 18px;
+        position: absolute;
+        left: -10px;
+        bottom: -20px;
+        margin-left: 20px;
+       
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: #1B1717;
+      font-family: sans-serif;
+      font-weight: 300;
+      max-width: fit-content;
+      animation: fadeIn 1s 3s backwards;
+      margin-left: -10px;
+      
+      
+    }
+
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #1B1717;
+    }
+  }
+}

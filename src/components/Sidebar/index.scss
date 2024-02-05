@@ -10,17 +10,16 @@
   .logo {
     display: block;
     padding: 8px 0;
+    width: 90px;
+    height: 90px;
 
     img {
       display: block;
-      margin-left: -45px;
-      margin-top: -35px;
-      width: 180px;
+      margin-left: auto;
+      width: 100%;
       height: auto;
 
-      &.sub-logo {
-        width: 60px;
-      }
+      
     }
   }
 

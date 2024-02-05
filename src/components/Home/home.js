@@ -3,6 +3,7 @@ import './home.scss';
 import { useState , useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedletters';
 import Logo from './Logo/logo.js';
+import Loader from 'react-loaders';
 
 function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -37,6 +38,7 @@ function Home() {
   }, []); 
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -58,13 +60,15 @@ function Home() {
             idx={17}
           />
         </h1>
-        <h2>React / Javascript / SASS / HTML / CSS</h2>
+        <h2>React / Javascript / SASS / HTML </h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
       <Logo/>
     </div>
+    <Loader type = "ball-scale-ripple-multiple"/>
+    </>
   );
 }
 
