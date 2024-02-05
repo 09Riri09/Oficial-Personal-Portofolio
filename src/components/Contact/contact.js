@@ -18,7 +18,10 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("gmail", "service_kquqgph", form.current, "template_g97cjk4")
+      .sendForm("gmail", "service_kquqgph", form.current, "template_g97cjk4" , 
+      {
+        publicKey: 'YDhYodi8SsQPGJY8G',
+      })
       .then(
         () => {
           alert("Message successfully sent!");
