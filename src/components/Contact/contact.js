@@ -1,12 +1,12 @@
 import "./contact.scss";
 import Loader from "react-loaders";
-import AnimatedLetters from  '../AnimatedLetters/animatedletters'
-import { useState , useEffect , useRef } from "react";
-import emailjs from '@emailjs/browser';
+import AnimatedLetters from "../AnimatedLetters/animatedletters";
+import { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const form = useRef()
+  const form = useRef();
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -15,20 +15,20 @@ function Contact() {
   }, []);
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm("gmail", "service_kquqgph", form.current, "template_g97cjk4")
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert("Failed to send the message, please try again");
         }
-      )
-  }
+      );
+  };
 
   return (
     <>
@@ -36,8 +36,8 @@ function Contact() {
         <div className="text-zone">
           <h1>
             <AnimatedLetters
-              letterClass = {letterClass}
-              strArray={["C", "o", "n", "t", "a", "c", "t ", " " , " m", "e"]}
+              letterClass={letterClass}
+              strArray={["C", "o", "n", "t", "a", "c", "t ", " ", " m", "e"]}
               idx={15}
             />
           </h1>
@@ -78,7 +78,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Loader type = 'ball-scale-ripple-multiple' />
+      <Loader type="ball-scale-ripple-multiple" />
     </>
   );
 }
