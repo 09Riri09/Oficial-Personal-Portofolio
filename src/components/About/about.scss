@@ -1,21 +1,19 @@
 .stage-cube-cont {
-    width: 50%;
-    height: 100%;
-
-    padding-top: 15%;
-    margin-top: 3%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    
-  }
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
   
   .cubespinner {
     animation-name: spincube;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 12s;
+    animation-duration: 25s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
@@ -25,14 +23,14 @@
       position: absolute;
       width: 350px;
       height: 350px;
-      border: 1px solid rgba(30, 13, 13, 0.4);
-      background: rgba(30, 13, 13, 0.4);
+      border: 1px solid #5d5b5b;
+      background: #1b1717b8;
       text-align: center;
       font-size: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 0 20px 0px rgba(30, 13, 13, 0.4);
+      box-shadow: 10px 0 30px 10px #1B1717;
     }
   
     .face1 {
