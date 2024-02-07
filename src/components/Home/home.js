@@ -42,12 +42,12 @@ function Home() {
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          {' '}
+          
           <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
+          <span className={letterClass} >i,</span>
           <br />
-          <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+          <span className={letterClass}>I</span>
+            <span className={letterClass}>'m</span>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
