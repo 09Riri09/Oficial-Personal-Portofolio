@@ -13,14 +13,13 @@ import {
 import { useState } from "react";
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={raresdevsidebar} alt="logo" />
       </Link>
-      <nav className = {showNav ? 'mobile-show' : ' '}>
+      <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -40,8 +39,6 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon icon = {faClose} color = "#EEEBDD"
-        />
       </nav>
       <ul>
         <li>
@@ -63,14 +60,6 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
-
-      <FontAwesomeIcon
-        icon={faBars}
-        color="#1B1717"
-        size="3x"
-        className="hamburger-icon"
-        onClick = {() => setShowNav (true)}
-      />
     </div>
   );
 };
