@@ -9,6 +9,7 @@ import {
   faEnvelope,
   faBars,
   faClose,
+  faFolderOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
@@ -39,6 +40,14 @@ const Sidebar = () => {
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="projects-link"
+          to="/projects"
+        >
+          <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
         </NavLink>
         <FontAwesomeIcon 
         onClick = {()=> setShowNav (false)}
