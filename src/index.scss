@@ -7,8 +7,25 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
 
 html{
   font-size: 62.5%;
+}
+
+.dashboard{
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  body {
+    overflow: visible;
+  }
+  
 }

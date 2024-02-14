@@ -21,6 +21,7 @@ $primary-color: #630000;
 input,
 textarea {
   font-family: 'Helvetica Neue';
+
 }
 
 
@@ -37,4 +38,10 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 
+}
+
+@media screen and (max-width: 1200px) {
+  textarea{
+    width: 400px;
+  }
 }

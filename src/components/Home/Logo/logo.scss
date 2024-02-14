@@ -24,6 +24,15 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+
+  .logo-container, .solid-logo{
+    max-width: 390px;
+    max-height: 390px;
+  }
+          
+}
+
 /*.logo-container {
   z-index: 0;
   width: 800px;
