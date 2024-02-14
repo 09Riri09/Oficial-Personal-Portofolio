@@ -126,7 +126,8 @@
     }
   }
 }
-.hamburger-icon{
+.hamburger-icon,
+.close-icon{
   display: none;
 }
 
@@ -139,6 +140,8 @@
     position: initial;
     height: auto;
     min-height: auto;
+
+    
 
     ul,
     nav {
@@ -154,11 +157,13 @@
       z-index: 3;
       margin: 0;
 
+      
       a {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 25px;
+
       }
 
       a:after {
@@ -169,20 +174,18 @@
         font-size: 11px;
       }
 
-      a svg{
-        opacity: 1 !important;
-        
-      }
       &.mobile-show{
         display: block;
       }
+      
     }
     .hamburger-icon,
     .close-icon{
       display: block;
       position: absolute;
-      top: 15px;
-      right: 15px;
+      top: 23px;
+      right: 40px;
     }
   }
+
 }
