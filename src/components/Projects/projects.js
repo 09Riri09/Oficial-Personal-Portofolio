@@ -16,7 +16,7 @@ function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        <button className="card-button">Open project</button>
+          <button className="card-button">Open project</button>
         </a>
       </div>
       <div className="card">
@@ -27,18 +27,7 @@ function Projects() {
         />
         <h1>Coming Soon!</h1>
         <p>Work in progress</p>
-        
-          <button className="card-button">Open project</button>
-      
-      </div>
-      <div className="card">
-        <img
-          className="card-img"
-          src="https://via.placeholder.com/150"
-          alt="Card image cap"
-        />
-        <h1>Coming Soon!</h1>
-        <p>Work in progress </p>
+
         <button className="card-button">Open project</button>
       </div>
     </div>

@@ -1,20 +1,19 @@
 .projects-container {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding-top: 500px;
-  padding-left: 120px;
-  padding-bottom: 100px;
-  height: 100vh;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+  padding: 40px;
 }
 
 .card {
-  width: 35rem;
-  height: 45rem;
+  width: 30rem;
+  height: 40rem;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
-  margin-left: 50px;
+  margin: 60px;
   text-align: center;
   box-shadow: 0 5px 8px rgba(0,0,0,0.1);
 }
@@ -41,3 +40,4 @@ p {
   font-weight: 400;
   margin-bottom: 20px;
 }
+
