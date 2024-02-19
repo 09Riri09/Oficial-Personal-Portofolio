@@ -8,8 +8,7 @@ function Projects() {
         <img className="card-img" src={urlogo} alt="Card image cap" />
         <h1>URL Shortener</h1>
         <p>
-          A simple URL shortener made in react, using the TinyURL API to shorten
-          any link.
+          A simple URL shortener using React for the frontend and AWS and Javascript for the backend.
         </p>
         <a
           href="https://url-shortener.raresdev.com/"
