@@ -22,6 +22,7 @@ const Sidebar = () => {
         <img src={raresdevsidebar} alt="logo" />
       </Link>
       <nav className = {showNav ? 'mobile-show' : ''}>
+        <div className = 'icons'>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -56,6 +57,8 @@ const Sidebar = () => {
         size = '3x'
         className="close-icon"
         />
+        </div>
+        
       </nav>
       <ul>
         <li>
