@@ -4,21 +4,7 @@ import typespeedlogo from "../../assets/images/typespeedlogo.webp";
 function Projects() {
   return (
     <div className="projects-container">
-      <div className="card">
-        <img className="card-img" src={urlogo} alt="Card image cap" />
-        <h1>URL Shortener</h1>
-        <p>
-          A minimalist URL shortener app, where i used the tinyURL API and a custom API to shorten URLs.
-              Technologies used: <strong>React</strong>, <strong>Javascript</strong>, <strong>AWS</strong>, <strong>DynamoDB</strong>.
-        </p>
-        <a
-          href="https://url-shortener.raresdev.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="card-button">Open project</button>
-        </a>
-      </div>
+     
       <div className="card">
         <img
           className="card-img"
@@ -35,6 +21,21 @@ function Projects() {
         <button className="card-button">Open project</button>
         </a>
     </div>
+    <div className="card">
+        <img className="card-img" src={urlogo} alt="Card image cap" />
+        <h1>URL Shortener</h1>
+        <p>
+          A minimalist URL shortener app, where i used the tinyURL API and a custom API to shorten URLs.
+              Technologies used: <strong>React</strong>, <strong>Javascript</strong>, <strong>AWS</strong>, <strong>DynamoDB</strong>.
+        </p>
+        <a
+          href="https://url-shortener.raresdev.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="card-button">Open project</button>
+        </a>
+      </div>
     </div>
   );
 }
