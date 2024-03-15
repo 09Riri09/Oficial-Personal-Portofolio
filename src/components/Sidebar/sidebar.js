@@ -29,10 +29,10 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
-          className="about-link"
-          to="/about"
+          className="projects-link"
+          to="/projects"
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
@@ -42,13 +42,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        
         <NavLink
           exact="true"
           activeclassname="active"
-          className="projects-link"
-          to="/projects"
+          className="about-link"
+          to="/about"
         >
-          <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
         <FontAwesomeIcon 
         onClick = {()=> setShowNav (false)}

@@ -7,10 +7,14 @@ import {
   faCss3,
   faGitAlt,
   faHtml5,
+  faJs,
   faJsSquare,
   faReact,
   faSass,
+  faNodeJs, // Adding Node.js icon
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom"; // Importing Link for routing to projects page
+
 import Loader from "react-loaders";
 
 function About() {
@@ -34,12 +38,13 @@ function About() {
             />
           </h1>
           <p>
-            Passionate front-end developer with a marketing background, eager to
-            dive into the dynamic world of tech. Armed with ambition, I seek
-            opportunities with established IT companies to harness modern
-            technologies and fuel my drive to learn and excel in the field.
-            Let's craft innovative digital experiences together!
+            Passionate front-end developer with hands-on experience in various technologies,
+            eager to dive into the dynamic world of tech. With a solid foundation in <strong>JavaScript</strong>,   
+            <strong> TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>SQL</strong>, 
+            <strong>SCSS</strong>, and <strong>HTML</strong>, I'm currently seeking opportunities with established IT companies
+            to work with modern technologies and fuel my drive to learn and excel in the field.
           </p>
+          
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -59,11 +64,11 @@ function About() {
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faNodeJs} color="#68A063" /> {/* Adding Node.js icon */}
             </div>
           </div>
         </div>
-        <Loader type = "ball-scale-ripple-multiple"/>
+        <Loader type="ball-scale-ripple-multiple" />
       </div>
     </>
   );
