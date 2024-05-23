@@ -1,9 +1,26 @@
 import "./projects.scss";
 import urlogo from "../../assets/images/urlogo.webp";
 import typespeedlogo from "../../assets/images/typespeedlogo.webp";
+import gamecontro from "../../assets/images/gamecontro.png";
 function Projects() {
   return (
     <div className="projects-container">
+      <div className="card">
+        <img
+          className="card-img"
+          src={gamecontro}
+          alt="Card image cap"
+        />
+        <h1>Falling shapes game. OOP focused.</h1>
+        <p>Focused on using Object Oriented Programming and implemented common game-development design patterns. Technologies used:<strong>Javascript</strong>, <strong>Pixi.js</strong>,<strong>CSS.</strong>  </p>
+        <a
+          href="https://shape-game-iota.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <button className="card-button">Open project</button>
+        </a>
+    </div>
      
       <div className="card">
         <img
